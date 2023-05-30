@@ -1,9 +1,42 @@
-.title-style{
+.cards{
     border-radius: 25px;
-    border: solid 1px;
-    background-color: antiquewhite;
 }
 
-.br{
-    color: rgba(red, green, blue, 0.5);
+html, body, .app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app{
+  background-color: rgba(33, 59, 49, 0.8);
+}
+
+.navbar-text-white {
+  color: white;
+  font-size: x-large;
+}
+
+.card-transition {
+  transition: all 2s ease;
+}
+
+.card-enter {
+  opacity: 0.6;
+  transform: translateX(-100%);
+}
+
+.card-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.card-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.card-exit-active {
+  opacity: 0.6;
+  transform: translateX(100%);
 }
