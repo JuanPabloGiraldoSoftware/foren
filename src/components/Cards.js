@@ -8,12 +8,13 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import avatarImage from './images/avatar.png';
-import avatarImage2 from './images/avatar2.png';
+import avatarImage2 from './images/avatar2.jpg';
+
 
 function CardsProfile() {
   return (
 
-    <Container className="cards">
+    <Container className="cardsc">
         <TransitionGroup>
             <CSSTransition
             classNames="card-transition"
@@ -22,7 +23,7 @@ function CardsProfile() {
                 <Row >
                     <Col>
                         <Card className="cardJ" style={{ width: '24rem' }}>
-                            <Card.Img variant="top" src={avatarImage} className="profile"/>
+                            <Card.Img variant="top" src={avatarImage}  className="profile"/>
                             <Card.Body>
                                 <Card.Title>Juan</Card.Title>
                                 <Card.Text>
@@ -41,7 +42,7 @@ function CardsProfile() {
                     </Col>
                     <Col>
                         <Card className="cardA"  style={{ width: '24rem' }}>
-                            <Card.Img variant="top" src={avatarImage2} className="profile"/>
+                            <Card.Img variant="top" src={avatarImage2}  className="profile"/>
                             <Card.Body>
                                 <Card.Title>Anderson</Card.Title>
                                 <Card.Text>
